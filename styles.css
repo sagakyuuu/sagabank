@@ -176,7 +176,7 @@ header button.btn-joi {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   background-color: var(--black-cl);
 }
@@ -190,11 +190,13 @@ header button.btn-joi {
 .info p {
   font-family: var(--poppins);
   color: var(--micro-cl);
+  font-size: 16px;
 }
 
-.info h2 {
+.info h3 {
   font-family: var(--poppins);
   color: var(--white-cl);
+  font-size: 24px;
 }
 /* Left end */
 

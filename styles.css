@@ -123,9 +123,12 @@ header button.btn-joi {
 
 .content {
   /* border: 2px solid red; */
-  margin: 200px 75px 60px;
-  width: calc(100% - 300px);
-  height: auto;
+  /* margin: 200px 75px 60px; */
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 70px;
 }
 
 .content h1 {
@@ -214,3 +217,99 @@ header button.btn-joi {
   transform: translatey(-20px);
 }
 /* Right end */
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  header {
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+    /* border: 2px solid red; */
+    top: 0;
+    left: 0;
+  }
+
+  header .logo span {
+    font-size: 1.6rem;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 2px;
+    top: 0;
+    left: 0;
+  }
+
+  header ul li a {
+    font-size: 0.8rem;
+  }
+
+  header button.btn-con,
+  header button.btn-joi {
+    font-size: 12px;
+  }
+
+  .left,
+  .right {
+    margin: 0;
+    padding: 0;
+    flex: 0;
+  }
+
+  .left .content h1,
+  .left .content h1 span {
+    font-size: 2.1rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0px 20px 30px;
+  }
+
+  .content .invest span,
+  .content p {
+    font-size: 1rem;
+  }
+
+  .info p {
+    font-size: 0.5rem;
+  }
+
+  .info h3 {
+    font-size: 0.8rem;
+  }
+
+  .download-platform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .download-platform i {
+    font-size: 1.2rem;
+  }
+
+  .right {
+    border-radius: 0;
+  }
+
+  .right img {
+    height: 340px;
+  }
+
+  .card2 {
+    transform: translate(0);
+  }
+}
